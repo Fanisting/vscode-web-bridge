@@ -1,0 +1,9 @@
+# built packages carry a machine-specific extension token
+*.vsix
+*.crx
+*.pem
+# local notes and unfinished experiments
+PROGRESS.md
+chrome/
+node_modules/
+.omc/

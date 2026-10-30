@@ -1,0 +1,19 @@
+{
+  "name": "vscode-web-bridge",
+  "displayName": "Agent Bridge (local)",
+  "description": "Lets a local agent drive this VS Code (web) window: files, editors, commands, terminals, diagnostics.",
+  "publisher": "local",
+  "version": "0.1.0",
+  "engines": { "vscode": "^1.74.0" },
+  "extensionKind": ["web"],
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "browser": "./extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "agentBridge.status", "title": "Agent Bridge: Status" },
+      { "command": "agentBridge.reconnect", "title": "Agent Bridge: Reconnect" },
+      { "command": "agentBridge.toggle", "title": "Agent Bridge: Pause / Resume" }
+    ]
+  }
+}
